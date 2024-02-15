@@ -1,0 +1,101 @@
+Embedded-C
+14/2/24
+
+Try it out:(stm cube Ide)
+#include "stm32f4xx.h"
+void delayMs(int n);
+int main(void)
+{
+	RCC->AHB1ENR |= 1; /* enable GPIOA clock */
+	GPIOA->MODER &= ~0x00000C00; /* clear pin mode */
+	GPIOA->MODER |=0x00000400; /* set pin to output mode */
+	while(1)
+	{
+		GPIOA->ODR |= 0x00000020; /* turn on LED */ delayMs(500);
+		GPIOA->ODR &= ~0x00000020; /* turn off LED */ delayMs(500);
+	}
+}
+/* 16 MHz SYSCLK */
+void delayMs(int n)
+{
+	int i;
+	for (; n > 0; n--)
+	for (i = 0; i < 3195; i++) ;
+}
+
+Memory:
+
+Sram-static ram
+Dram-dynamic ram
+
+ARM processor:
+Arch:Version 7
+series:Cortex M 
+M-micro controller
+A-application
+R-real time application
+
+ARM Cortex M4 180Mhz
+
+I bus-instruction
+D bus- data
+S bus-system
+
+AHB bus matrix:
+AHB1 - 180 hz, AHB2-twice that of AHB1,APB2(90mhz),APB2(45 mhz)
+
+GPIO:general purpose input output
+Reading digital signals
+Issuing interrupts
+Generating triggers for external
+
+GPIO pin:generic pin ,2 voltage (high or low) 
+Port :16 pins
+
+Multiplexing
+
+Input buffer
+Output buffer
+
+Input:
+Defaults GIPO pins will be in High Z state or Floating state(unpredictable)
+Keeping the pin in this state it consumes more power
+
+Internal Pull down(down side source)
+Internal Pull Up(up side source)
+
+Output:
+Open Drain state
+Push pull configuration
+
+Memory map:
+Hexadecimal
+0,1,2,3,4,5,6,7,8,9,A,B,C,C,D,E,F
+4 giga bits
+
+
+#include “stm32f4xx.h”
+#include “Board_LED.h”
+
+#define LED_NUM
+
+Const unsigned long led_mask[ ]={1u1 << 5}
+int32_t LED_Initialize (void){
+
+	RCC->AHB1ENR |=(1u1 << 0);
+GPIOA->MODER &= ~ ((3u1 << 2*5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
