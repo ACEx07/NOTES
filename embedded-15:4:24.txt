@@ -1,0 +1,18 @@
+Embedded
+15/02/24
+
+Memory mapping(pg:66(datasheet))(pg:167,144-Ref)
+C-lang is used for mapping and addressing the memory
+
+Use memory map-address
+
+Base+offset
+
+Hexadecimal-0x
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H(8bits)(GPIO-16pins-32 bits)
+
+Regsiter-*volatile unsigned int*-pointer to the address to access
+ 
+
+
+
