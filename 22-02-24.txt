@@ -1,0 +1,28 @@
+Embedded
+22/02/24
+
+Linux:
+-Always consider everything as “FILE”
+-Storage is mounted as ROOT
+
+SOC-System on chip(ARM-Architecture as Core)
+SOM-System on Module
+SBC-Single Board Computer
+ Chip and module manufacture 
+
+-A5D2X  or A5D27 (SOC)
+-Pi Core A5D2X (SOM)
+-Rugged board A5D2X(SBC)
+
+Flash(storage)
+Or SD card/ Network
+
+At91 bootstrap->Load ->SRAM
+Boot RAM in SOC (Locked Inside)
+
+.dts- device tree source
+.dtsi- device tree source include
+.dtb- device tree binary
+(For Kernel)
+
+-RFS(Root file system)
