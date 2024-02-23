@@ -1,0 +1,29 @@
+Embedded 
+23/02/24
+
+Linux-1983(GNU Project)
+GNU’s NOT UNIX
+Richard Stallman
+
+1992 Completed every major OS component except their Kernel and GNU Hurd
+
+Linux Torvalds(1991) Linux Ver 0.12(1992)
+
+Linux - Kernal not a OS
+Monolithic Modular Kernel
+User mode-kernel mode-hardware
+
+Linux Shell Commands
+-Internal/Built in command
+-External command
+
+Sudo su - root
+
+Pathways:
+-Relative(./ ../ - Current to destination)
+-Absolute(From Root to destination)
+
+inode for every files
+ Assign5: ..  &  inode relation between it?
+
+Assign6: Internals and External commands
