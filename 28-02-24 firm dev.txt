@@ -1,0 +1,77 @@
+Embedded Firmware:
+28/02/24
+
+ARM-1980s
+Acorn Archimedes
+
+CISC-Complex Instruction Set Architecture
+-High Performance 
+-Energy Efficient
+-Led to creation of  first ARM1 in 1985
+
+ARM:
+Behave:
+-what instructions it has 
+-what instructions do
+
+Describe:
+-what functionality the software can rely on the hardware to provide
+
+ARM Architecture:
+Specifics:
+-Instruction set
+-Register set
+-Exception model
+-Memory Model
+-Debug, Trace and Profiling
+
+RISC:
+Reduced Instructions Set Computer
+-Simple Instructions 
+-Simple Addressing Model
+-Load Store Architecture 
+-Big Endian/Little Endian(MSB/LSB)
+
+Micro Architecture:
+Build and design of a processor is referred to as micro architecture 
+Includes:
+-Pipeline length and layout
+-Number & sizes of caches
+-Cycle counts for individual instruction 
+-Optional features are implemented 
+
+IP core:
+Implementation in VHDL(Verilog of a block of hardware logic)
+
+Processor Family:
+-ARM1(1985)/ARM11(2002)
+-Cortex  family in 2005
+  	-Cortex(Letter and Number)
+	-New processors, with an improved design, better performance and new features
+
+Profiles:
+-A,R,M
+
+ARM Licensee their IP to customers:
+ 	-Architecture
+	-Processor Cores
+
+SOC:
+System on chip
+-Multimedia Encoders/Decoders
+-Direct Memory Access(DMA)
+-ARM CPU 
+-Digital Signal Processor(DSP)
+-Network Interface Controller
+-Audio
+-USB
+-Video
+-Memory
+-Storage
+
+ARM Documentation:
+
+ARM-Architecture Reference Manual
+TRM-Technical Reference Manual
+CIM-Configuration and Integration Manual
+-SOC Datasheet
