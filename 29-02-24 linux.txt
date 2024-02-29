@@ -1,0 +1,26 @@
+Embedded c LINUX
+29/02/24
+
+Bash command:
+echo
+echo $SHELL
+Chmod u+x filename.sh
+
+ps -ax (current Process IDs)
+ls /proc (process IDs)
+
+Process Creation:
+-system()(lib call)
+-fork()(sys call)
+-wait()(sys call)
+-waitpid()(sys call)
+-exec()(sys call)
+-clone()(calls all)
+
+Zombie process - process without no objectives/needless
+Orphan process -without parent process it runs
+-Fork()
+
+
+Shell programs 
+Assign8: 4 process a+b,a-b,a*b,a/b
